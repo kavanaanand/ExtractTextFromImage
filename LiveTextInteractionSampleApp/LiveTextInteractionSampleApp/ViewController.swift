@@ -20,8 +20,8 @@ extension ViewController {
         
         ltInteraction.delegate = self
         
-        imageView.image = UIImage(named: "testImage1")
-        imageView.contentMode = UIView.ContentMode.scaleAspectFill
+        imageView.image = UIImage(named: "testimage1")
+        imageView.contentMode = UIView.ContentMode.scaleAspectFit
         imageView.addInteraction(ltInteraction.imageInteraction())
         self.view.addSubview(imageView)
         

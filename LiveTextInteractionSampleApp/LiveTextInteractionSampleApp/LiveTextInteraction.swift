@@ -36,6 +36,7 @@ import VisionKit
             do {
                 let analysis = try await analyzer.analyze(image, configuration: ImageAnalyzer.Configuration([.text]))
                     interaction.preferredInteractionTypes = .automatic
+//                    interaction.isSupplementaryInterfaceHidden = false
                     interaction.analysis = analysis
             } catch {
                 
@@ -52,18 +53,34 @@ import VisionKit
 extension LiveTextInteraction : ImageAnalysisInteractionDelegate {
 
     func interaction(_ interaction: ImageAnalysisInteraction, shouldBeginAt point: CGPoint, for interactionType: ImageAnalysisInteraction.InteractionTypes) -> Bool {
+        print("----- Interaction begin ----")
+        print(interaction.analysis?.transcript ?? "no text here")
+        print(point)
         return true
     }
 
     func interaction(_ interaction: ImageAnalysisInteraction, highlightSelectedItemsDidChange highlightSelectedItems: Bool) {
-
+        print("----- Interaction highlight ----")
+        print(interaction.analysis?.transcript ?? "no text here" )
     }
 
     func interaction(_ interaction: ImageAnalysisInteraction, liveTextButtonDidChangeToVisible visible: Bool) {
-
+        print("----- Interaction button ----")
+        print(interaction.analysis?.transcript ?? "no text here")
+        print("button visible: ",visible)
     }
 
     func contentsRect(for interaction: ImageAnalysisInteraction) -> CGRect {
         return delegate?.contentsRect(for: self) ?? CGRectZero
     }
+    
+    /*
+    func contentView(for interaction: ImageAnalysisInteraction) -> UIView? {
+        
+    }
+    
+    func presentingViewController(for interaction: ImageAnalysisInteraction) -> UIViewController? {
+        
+    }
+     */
 }
