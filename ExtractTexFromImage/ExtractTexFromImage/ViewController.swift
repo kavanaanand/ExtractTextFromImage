@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  LiveTextInteractionSampleApp
+//  ExtractTexFromImageSampleApp
 //
 //  Created by Kavana Anand on 10/1/22.
 //
@@ -11,7 +11,7 @@ class ViewController: UIViewController {
     private let imageView = UIImageView()
     private let label = UILabel()
     private let ltInteraction = LiveTextInteraction()
-    private let ltRecognizer = LiveTextRecognizer()
+    private let ltRecognizer = TextRecognizer()
     private let overlayLayer = CAShapeLayer()
     private let images = ["dreambig", "summer", "progress", "coffee", "happy", "welcome"];
 }
@@ -88,8 +88,8 @@ extension ViewController: LiveTextInteractionDelegate {
     }
 }
 
-extension ViewController: LiveTextRecognizerDelegate {
-    func liveTextRecognizer(_ recognizer: LiveTextRecognizer, didFindText text: String, at rect: CGRect) {
+extension ViewController: TextRecognizerDelegate {
+    func textRecognizer(_ recognizer: TextRecognizer, didFindText text: String, at rect: CGRect) {
         let labelText = text.appendingFormat("\n\nx:%f y:%f\nw:%f h:%f", rect.minX, rect.minY, rect.width, rect.height)
         label.text = labelText
         overlayLayer.path = UIBezierPath(rect: imageView.convertRect(fromImageRect: rect)).cgPath

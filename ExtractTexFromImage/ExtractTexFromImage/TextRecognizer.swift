@@ -1,6 +1,6 @@
 //
 //  LiveTextRecognizer.swift
-//  LiveTextInteractionSampleApp
+//  ExtractTexFromImageSampleApp
 //
 //  Created by Kavana Anand on 10/21/22.
 //
@@ -8,11 +8,11 @@
 import Vision
 import UIKit
 
-@objc protocol LiveTextRecognizerDelegate {
-    @objc func liveTextRecognizer(_ recognizer: LiveTextRecognizer, didFindText text: String, at rect: CGRect)
+@objc protocol TextRecognizerDelegate {
+    @objc func textRecognizer(_ recognizer: TextRecognizer, didFindText text: String, at rect: CGRect)
 }
 
-@objc class LiveTextRecognizer: NSObject {
+@objc class TextRecognizer: NSObject {
     
     @objc required override init() {
         super.init()
@@ -54,10 +54,10 @@ import UIKit
         }
     }
     
-    @objc weak var delegate: LiveTextRecognizerDelegate?
+    @objc weak var delegate: TextRecognizerDelegate?
 }
 
-private extension LiveTextRecognizer {
+private extension TextRecognizer {
     private func processResult(_ image: UIImage, texts: [String], boundingRects: [CGRect]) {
         var textRects = Array<CGRect>()
         for boundingBox in boundingRects {
@@ -82,7 +82,7 @@ private extension LiveTextRecognizer {
         let text = texts.joined(separator: "\n")
 
         DispatchQueue.main.async { [self] in
-            delegate?.liveTextRecognizer(self, didFindText: text, at: textRect)
+            delegate?.textRecognizer(self, didFindText: text, at: textRect)
         }
     }
 }

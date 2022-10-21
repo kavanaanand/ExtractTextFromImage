@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  LiveTextInteractionSampleApp
+//  ExtractTexFromImageSampleApp
 //
 //  Created by Kavana Anand on 10/1/22.
 //

@@ -7,27 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8E4A2DAE2902FBDD00B00401 /* LiveTextRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4A2DAD2902FBDD00B00401 /* LiveTextRecognizer.swift */; };
-		8E4F251C28E8B1B7009BB028 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4F251B28E8B1B7009BB028 /* AppDelegate.swift */; };
-		8E4F251E28E8B1B7009BB028 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4F251D28E8B1B7009BB028 /* SceneDelegate.swift */; };
-		8E4F252028E8B1B7009BB028 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4F251F28E8B1B7009BB028 /* ViewController.swift */; };
-		8E4F252328E8B1B7009BB028 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E4F252128E8B1B7009BB028 /* Main.storyboard */; };
-		8E4F252528E8B1B8009BB028 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E4F252428E8B1B8009BB028 /* Assets.xcassets */; };
-		8E4F252828E8B1B8009BB028 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E4F252628E8B1B8009BB028 /* LaunchScreen.storyboard */; };
-		8E4F260128E8CE98009BB028 /* LiveTextInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4F260028E8CE98009BB028 /* LiveTextInteraction.swift */; };
+		8E4A2E18290357B000B00401 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4A2E0D290357B000B00401 /* ViewController.swift */; };
+		8E4A2E19290357B000B00401 /* TextRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4A2E0E290357B000B00401 /* TextRecognizer.swift */; };
+		8E4A2E1A290357B000B00401 /* LiveTextInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4A2E0F290357B000B00401 /* LiveTextInteraction.swift */; };
+		8E4A2E1B290357B000B00401 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E4A2E10290357B000B00401 /* Assets.xcassets */; };
+		8E4A2E1C290357B000B00401 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E4A2E11290357B000B00401 /* LaunchScreen.storyboard */; };
+		8E4A2E1D290357B000B00401 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E4A2E13290357B000B00401 /* Main.storyboard */; };
+		8E4A2E1E290357B000B00401 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4A2E15290357B000B00401 /* AppDelegate.swift */; };
+		8E4A2E20290357B000B00401 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4A2E17290357B000B00401 /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8E4A2DAD2902FBDD00B00401 /* LiveTextRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveTextRecognizer.swift; sourceTree = "<group>"; };
-		8E4F251828E8B1B7009BB028 /* LiveTextInteractionSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveTextInteractionSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8E4F251B28E8B1B7009BB028 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8E4F251D28E8B1B7009BB028 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8E4F251F28E8B1B7009BB028 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8E4F252228E8B1B7009BB028 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8E4F252428E8B1B8009BB028 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8E4F252728E8B1B8009BB028 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8E4F252928E8B1B8009BB028 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8E4F260028E8CE98009BB028 /* LiveTextInteraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveTextInteraction.swift; sourceTree = "<group>"; };
+		8E4A2E0D290357B000B00401 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8E4A2E0E290357B000B00401 /* TextRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextRecognizer.swift; sourceTree = "<group>"; };
+		8E4A2E0F290357B000B00401 /* LiveTextInteraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveTextInteraction.swift; sourceTree = "<group>"; };
+		8E4A2E10290357B000B00401 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8E4A2E12290357B000B00401 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8E4A2E14290357B000B00401 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8E4A2E15290357B000B00401 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8E4A2E16290357B000B00401 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E4A2E17290357B000B00401 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8E4F251828E8B1B7009BB028 /* ExtractTexFromImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExtractTexFromImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,10 +41,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E4A2E0C290357B000B00401 /* ExtractTexFromImage */ = {
+			isa = PBXGroup;
+			children = (
+				8E4A2E0D290357B000B00401 /* ViewController.swift */,
+				8E4A2E0E290357B000B00401 /* TextRecognizer.swift */,
+				8E4A2E0F290357B000B00401 /* LiveTextInteraction.swift */,
+				8E4A2E10290357B000B00401 /* Assets.xcassets */,
+				8E4A2E11290357B000B00401 /* LaunchScreen.storyboard */,
+				8E4A2E13290357B000B00401 /* Main.storyboard */,
+				8E4A2E15290357B000B00401 /* AppDelegate.swift */,
+				8E4A2E16290357B000B00401 /* Info.plist */,
+				8E4A2E17290357B000B00401 /* SceneDelegate.swift */,
+			);
+			path = ExtractTexFromImage;
+			sourceTree = "<group>";
+		};
 		8E4F250F28E8B1B7009BB028 = {
 			isa = PBXGroup;
 			children = (
-				8E4F251A28E8B1B7009BB028 /* LiveTextInteractionSampleApp */,
+				8E4A2E0C290357B000B00401 /* ExtractTexFromImage */,
 				8E4F251928E8B1B7009BB028 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,33 +68,17 @@
 		8E4F251928E8B1B7009BB028 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8E4F251828E8B1B7009BB028 /* LiveTextInteractionSampleApp.app */,
+				8E4F251828E8B1B7009BB028 /* ExtractTexFromImage.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		8E4F251A28E8B1B7009BB028 /* LiveTextInteractionSampleApp */ = {
-			isa = PBXGroup;
-			children = (
-				8E4F260028E8CE98009BB028 /* LiveTextInteraction.swift */,
-				8E4F251B28E8B1B7009BB028 /* AppDelegate.swift */,
-				8E4F251D28E8B1B7009BB028 /* SceneDelegate.swift */,
-				8E4F251F28E8B1B7009BB028 /* ViewController.swift */,
-				8E4F252128E8B1B7009BB028 /* Main.storyboard */,
-				8E4F252428E8B1B8009BB028 /* Assets.xcassets */,
-				8E4F252628E8B1B8009BB028 /* LaunchScreen.storyboard */,
-				8E4F252928E8B1B8009BB028 /* Info.plist */,
-				8E4A2DAD2902FBDD00B00401 /* LiveTextRecognizer.swift */,
-			);
-			path = LiveTextInteractionSampleApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8E4F251728E8B1B7009BB028 /* LiveTextInteractionSampleApp */ = {
+		8E4F251728E8B1B7009BB028 /* ExtractTexFromImage */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8E4F252C28E8B1B8009BB028 /* Build configuration list for PBXNativeTarget "LiveTextInteractionSampleApp" */;
+			buildConfigurationList = 8E4F252C28E8B1B8009BB028 /* Build configuration list for PBXNativeTarget "ExtractTexFromImage" */;
 			buildPhases = (
 				8E4F251428E8B1B7009BB028 /* Sources */,
 				8E4F251528E8B1B7009BB028 /* Frameworks */,
@@ -88,9 +88,9 @@
 			);
 			dependencies = (
 			);
-			name = LiveTextInteractionSampleApp;
+			name = ExtractTexFromImage;
 			productName = LiveTextInteractionSampleApp;
-			productReference = 8E4F251828E8B1B7009BB028 /* LiveTextInteractionSampleApp.app */;
+			productReference = 8E4F251828E8B1B7009BB028 /* ExtractTexFromImage.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -108,7 +108,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8E4F251328E8B1B7009BB028 /* Build configuration list for PBXProject "LiveTextInteractionSampleApp" */;
+			buildConfigurationList = 8E4F251328E8B1B7009BB028 /* Build configuration list for PBXProject "ExtractTexFromImage" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -121,7 +121,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8E4F251728E8B1B7009BB028 /* LiveTextInteractionSampleApp */,
+				8E4F251728E8B1B7009BB028 /* ExtractTexFromImage */,
 			);
 		};
 /* End PBXProject section */
@@ -131,9 +131,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E4F252828E8B1B8009BB028 /* LaunchScreen.storyboard in Resources */,
-				8E4F252528E8B1B8009BB028 /* Assets.xcassets in Resources */,
-				8E4F252328E8B1B7009BB028 /* Main.storyboard in Resources */,
+				8E4A2E1D290357B000B00401 /* Main.storyboard in Resources */,
+				8E4A2E1B290357B000B00401 /* Assets.xcassets in Resources */,
+				8E4A2E1C290357B000B00401 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,31 +144,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E4A2DAE2902FBDD00B00401 /* LiveTextRecognizer.swift in Sources */,
-				8E4F252028E8B1B7009BB028 /* ViewController.swift in Sources */,
-				8E4F260128E8CE98009BB028 /* LiveTextInteraction.swift in Sources */,
-				8E4F251C28E8B1B7009BB028 /* AppDelegate.swift in Sources */,
-				8E4F251E28E8B1B7009BB028 /* SceneDelegate.swift in Sources */,
+				8E4A2E20290357B000B00401 /* SceneDelegate.swift in Sources */,
+				8E4A2E1E290357B000B00401 /* AppDelegate.swift in Sources */,
+				8E4A2E19290357B000B00401 /* TextRecognizer.swift in Sources */,
+				8E4A2E1A290357B000B00401 /* LiveTextInteraction.swift in Sources */,
+				8E4A2E18290357B000B00401 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8E4F252128E8B1B7009BB028 /* Main.storyboard */ = {
+		8E4A2E11290357B000B00401 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				8E4F252228E8B1B7009BB028 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		8E4F252628E8B1B8009BB028 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8E4F252728E8B1B8009BB028 /* Base */,
+				8E4A2E12290357B000B00401 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8E4A2E13290357B000B00401 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E4A2E14290357B000B00401 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -297,7 +297,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M4EZ4J3476;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LiveTextInteractionSampleApp/Info.plist;
+				INFOPLIST_FILE = ExtractTexFromImage/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -308,7 +308,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kavana.LiveTextInteractionSampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = kavana.ExtractTexFromImage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -325,7 +325,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M4EZ4J3476;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LiveTextInteractionSampleApp/Info.plist;
+				INFOPLIST_FILE = ExtractTexFromImage/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -336,7 +336,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kavana.LiveTextInteractionSampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = kavana.ExtractTexFromImage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -347,7 +347,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8E4F251328E8B1B7009BB028 /* Build configuration list for PBXProject "LiveTextInteractionSampleApp" */ = {
+		8E4F251328E8B1B7009BB028 /* Build configuration list for PBXProject "ExtractTexFromImage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8E4F252A28E8B1B8009BB028 /* Debug */,
@@ -356,7 +356,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8E4F252C28E8B1B8009BB028 /* Build configuration list for PBXNativeTarget "LiveTextInteractionSampleApp" */ = {
+		8E4F252C28E8B1B8009BB028 /* Build configuration list for PBXNativeTarget "ExtractTexFromImage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8E4F252D28E8B1B8009BB028 /* Debug */,
