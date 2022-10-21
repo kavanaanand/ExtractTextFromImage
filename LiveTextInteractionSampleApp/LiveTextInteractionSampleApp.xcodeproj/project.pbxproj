@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E4A2DAE2902FBDD00B00401 /* LiveTextRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4A2DAD2902FBDD00B00401 /* LiveTextRecognizer.swift */; };
 		8E4F251C28E8B1B7009BB028 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4F251B28E8B1B7009BB028 /* AppDelegate.swift */; };
 		8E4F251E28E8B1B7009BB028 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4F251D28E8B1B7009BB028 /* SceneDelegate.swift */; };
 		8E4F252028E8B1B7009BB028 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4F251F28E8B1B7009BB028 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8E4A2DAD2902FBDD00B00401 /* LiveTextRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveTextRecognizer.swift; sourceTree = "<group>"; };
 		8E4F251828E8B1B7009BB028 /* LiveTextInteractionSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveTextInteractionSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E4F251B28E8B1B7009BB028 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E4F251D28E8B1B7009BB028 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				8E4F252428E8B1B8009BB028 /* Assets.xcassets */,
 				8E4F252628E8B1B8009BB028 /* LaunchScreen.storyboard */,
 				8E4F252928E8B1B8009BB028 /* Info.plist */,
+				8E4A2DAD2902FBDD00B00401 /* LiveTextRecognizer.swift */,
 			);
 			path = LiveTextInteractionSampleApp;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E4A2DAE2902FBDD00B00401 /* LiveTextRecognizer.swift in Sources */,
 				8E4F252028E8B1B7009BB028 /* ViewController.swift in Sources */,
 				8E4F260128E8CE98009BB028 /* LiveTextInteraction.swift in Sources */,
 				8E4F251C28E8B1B7009BB028 /* AppDelegate.swift in Sources */,

@@ -11,6 +11,7 @@ import VisionKit
 @objc protocol LiveTextInteractionDelegate {
     
     @objc func contentsRect(for interaction: LiveTextInteraction) -> CGRect
+    @objc func liveTextInteraction(_ interaction: LiveTextInteraction,hasText text: String)
     
 }
 
@@ -53,21 +54,25 @@ import VisionKit
 extension LiveTextInteraction : ImageAnalysisInteractionDelegate {
 
     func interaction(_ interaction: ImageAnalysisInteraction, shouldBeginAt point: CGPoint, for interactionType: ImageAnalysisInteraction.InteractionTypes) -> Bool {
-        print("----- Interaction begin ----")
+        print("----- Interaction ----")
         print(interaction.analysis?.transcript ?? "no text here")
         print(point)
         return true
     }
 
     func interaction(_ interaction: ImageAnalysisInteraction, highlightSelectedItemsDidChange highlightSelectedItems: Bool) {
-        print("----- Interaction highlight ----")
-        print(interaction.analysis?.transcript ?? "no text here" )
+
     }
 
     func interaction(_ interaction: ImageAnalysisInteraction, liveTextButtonDidChangeToVisible visible: Bool) {
-        print("----- Interaction button ----")
-        print(interaction.analysis?.transcript ?? "no text here")
-        print("button visible: ",visible)
+        guard let analysis = interaction.analysis else {
+            return
+        }
+        
+        if (analysis.hasResults(for: .text)) {
+            print(interaction.analysis?.transcript ?? "no text here")
+            delegate?.liveTextInteraction(self, hasText: analysis.transcript)
+        }
     }
 
     func contentsRect(for interaction: ImageAnalysisInteraction) -> CGRect {
