@@ -20,7 +20,7 @@ extension ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = UIColor.orange
+        view.backgroundColor = .orange
         
         ltInteraction.delegate = self
         
@@ -29,14 +29,15 @@ extension ViewController {
         imageView.image = UIImage(named: images[0])
         imageView.contentMode = UIView.ContentMode.scaleAspectFit
         imageView.addInteraction(ltInteraction.imageInteraction())
-        self.view.addSubview(imageView)
+        view.addSubview(imageView)
         
         label.numberOfLines = 0
         label.lineBreakMode = .byWordWrapping
         label.textAlignment = .left
         label.backgroundColor = .black
         label.layer.opacity = 0.7
-        self.view.addSubview(label)
+        label.textColor = .white
+        view.addSubview(label)
         
         overlayLayer.fillColor = UIColor.clear.cgColor
         overlayLayer.strokeColor = UIColor.red.cgColor
@@ -46,13 +47,13 @@ extension ViewController {
         imageView.translatesAutoresizingMaskIntoConstraints = false
         label.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            imageView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 10),
-            imageView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -10),
-            imageView.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 50),
+            imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
+            imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10),
+            imageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 50),
             imageView.bottomAnchor.constraint(equalTo: label.topAnchor, constant: 10),
-            label.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -50),
-            label.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 10),
-            label.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -10),
+            label.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -50),
+            label.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
+            label.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10),
             label.heightAnchor.constraint(equalToConstant: 250),
         ])
         
